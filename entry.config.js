@@ -3,5 +3,6 @@
  */
 var path = require("path");
 module.exports={
-    "demo":"./src/js/demo.jsx"
+    "demo":"./src/js/demo.jsx",
+    "demo1":"./src/js/demo1.jsx"
 }

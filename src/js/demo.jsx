@@ -9,7 +9,20 @@ import ReactDOM from 'react-dom';
 var Hello = React.createClass({
     render(){
         return(<div>
-            <img className="grayscale" src="http://www.php100.com/uploadfile/2012/1030/20121030080410580.jpg" alt=""/>
+            <ul>
+                <li className="left-to-right">
+                    <a href="#">
+                        <div className="img">
+                            <img className="grayscale" src="http://www.php100.com/uploadfile/2012/1030/20121030080410580.jpg" alt=""/>
+                        </div>
+                        <div className="info">
+                            <h3>hello</h3>
+
+                            <p></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>)
     }
 });

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative;
+            height: 300px;
+            width: 500px;
+        }
+        .in1,.in2{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-size:cover;
+            -webkit-animation: move 100s infinite linear alternate;
+            animation: move 100s infinite linear alternate;
+        }
+        @-webkit-keyframes move{
+            100%{background-position: 500% 0;}
+        }
+        @keyframes move{
+            100%{background-position: 500% 0;}
+        }
+        .in1{
+            background-image: url('http://sandbox.runjs.cn/uploads/rs/26/ddzmgynp/cloud.png');
+
+        }
+        .in2{
+            background-image: url('http://sandbox.runjs.cn/uploads/rs/26/ddzmgynp/cloud1.png');
+            -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="in1"></div>
+    <div class="in2"></div>
+</div>
+</body>
+</html>

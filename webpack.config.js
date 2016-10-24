@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var config = {
     entry: require(path.resolve(__dirname, 'entry.config.js')),
     output:{
@@ -21,7 +22,7 @@ var config = {
             },
             {
                 test:/\.css?$/,
-                loader:'style!css'
+                loader: 'style!css?modules!postcss'
             },
             {
                 test:/\.(jpg|png|gif|jpeg)?$/,
@@ -32,7 +33,13 @@ var config = {
                 loader:'url?limit=20480&name=dist/other/[name].[hash:8].[ext]'
             }
         ]
-    }
+    },
+    postcss: [
+        require('autoprefixer')//调用autoprefixer插件
+    ],
+    plugins: [
+    new webpack.OldWatchingPlugin()
+]
 };
 
 module.exports = config;
