@@ -1,0 +1,20 @@
+.content div {
+  background: url("../images/sprite.png") no-repeat;
+  display: block; }
+
+.class_0 {
+  background-position: -1px -32px !important;
+  width: 46px;
+  height: 46px; }
+
+.class_1 {
+  background-position: -51px -33px !important;
+  width: 46px;
+  height: 47px; }
+
+.class_2 {
+  background-position: -101px -33px !important;
+  width: 46px;
+  height: 47px; }
+
+/*# sourceMappingURL=sprite.css.map */
